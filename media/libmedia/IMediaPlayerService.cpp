@@ -20,6 +20,7 @@
 
 #include <binder/Parcel.h>
 #include <binder/IMemory.h>
+#include <media/IHDCP.h>
 #include <media/IMediaCodecList.h>
 #include <media/IMediaHTTPService.h>
 #include <media/IMediaPlayerService.h>
