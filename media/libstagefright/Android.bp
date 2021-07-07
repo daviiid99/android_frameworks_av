@@ -205,7 +205,7 @@ cc_library {
     srcs: [
         "ACodec.cpp",
         "ACodecBufferChannel.cpp",
-        "AACWriter.cpp",,
+        "AACWriter.cpp",
         "AMRWriter.cpp",
         "AudioSource.cpp",
         "BufferImpl.cpp",
