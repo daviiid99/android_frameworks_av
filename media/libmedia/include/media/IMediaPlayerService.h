@@ -52,7 +52,9 @@ public:
     virtual sp<IMediaPlayer> create(const sp<IMediaPlayerClient>& client,
             audio_session_t audioSessionId = AUDIO_SESSION_ALLOCATE,
             const std::string opPackage = "") = 0;
+    virtual sp<IHDCP>           makeHDCP(bool createEncryptionModule) = 0;
     virtual sp<IMediaCodecList> getCodecList() const = 0;
+
 
     // Connects to a remote display.
     // 'iface' specifies the address of the local interface on which to listen for
