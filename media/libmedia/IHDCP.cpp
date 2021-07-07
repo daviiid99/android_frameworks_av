@@ -56,7 +56,7 @@ struct BpHDCPObserver : public BpInterface<IHDCPObserver> {
 };
 
 IMPLEMENT_META_INTERFACE(HDCPObserver, "android.hardware.IHDCPObserver");
-
+static_assert(internal::allowedManualInterface(NAME);
 struct BpHDCP : public BpInterface<IHDCP> {
     explicit BpHDCP(const sp<IBinder> &impl)
         : BpInterface<IHDCP>(impl) {
@@ -167,7 +167,7 @@ struct BpHDCP : public BpInterface<IHDCP> {
 };
 
 IMPLEMENT_META_INTERFACE(HDCP, "android.hardware.IHDCP");
-
+static_assert(internal::allowedManualInterface(NAME);
 status_t BnHDCPObserver::onTransact(
         uint32_t code, const Parcel &data, Parcel *reply, uint32_t flags) {
     switch (code) {
